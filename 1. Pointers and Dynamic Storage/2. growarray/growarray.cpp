@@ -4,6 +4,7 @@
 // resizeArray grows the array into its new size
 // resizeArray: creates temporary new array of desired size, copy over each of the individual elements, and delete them from the old array, and make it point to the temporary array. The effect of that is the array has been resized.
 // Because resizeArray takes many steps, we want to set newSize to a much larger size so the operation doesn't need to be repeated
+// Line 11 *&: A point to an address allows the address to be changed, while if it is just an address, we can only change the value at the address.
 
 #include <iostream>
 using namespace std;
