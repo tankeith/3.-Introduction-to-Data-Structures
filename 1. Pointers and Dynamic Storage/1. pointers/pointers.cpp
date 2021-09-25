@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
     int x = 100;            // initialize x with value of 100
-    int *ptr = nullptr;     // create pointer
+    int* ptr = nullptr;     // create pointer
     ptr = &x;               // set pointer to the address of x
     cout << *ptr << endl;   // prints 100. Not the same as cout << ptr; which gives the address of what ptr is pointing to
     cout << ptr << endl;    // prints out address of ptr

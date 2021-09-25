@@ -10,7 +10,7 @@
 using namespace std;
 
 void resizeArray(int *&arr, int currentSize, int newSize) { // arr will change in the resizing, so we need to use pass the pointer by reference
-    int *temp = new int[newSize]; // create temporary pointer on the heap pointing to an array of size newSize. temp points to an array of 
+    int* temp = new int[newSize]; // create temporary pointer on the heap pointing to an array of size newSize. temp points to an array of 
     for (int i = 0; i < currentSize; i++) // copy all the elements of the old array into the new array one by one
         temp[i] = arr[i]; // we now have two identical arrays except that arr is full and temp has extra space
     delete [] arr; // delete old array to prevent memory leak or garbage on the leap. Cleans up memory space pointed to by arr, which is fine because a copy is in temp
@@ -19,7 +19,7 @@ void resizeArray(int *&arr, int currentSize, int newSize) { // arr will change i
 
 int main() {
     int size = 10;
-    int *arr = new int[size];
+    int* arr = new int[size];
     for (int i = 0; i < size; i++)
         arr[i] = i * 10;
     int oneMore = 110; // new element to fill into array
