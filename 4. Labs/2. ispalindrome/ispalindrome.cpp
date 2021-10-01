@@ -6,7 +6,6 @@
 // cout << is_palindrome(12321); This example would return true.
 
 #include <iostream>
-#include <string>
 using namespace std;
 
 bool is_palindrome(int test);
