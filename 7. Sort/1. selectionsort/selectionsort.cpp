@@ -31,6 +31,6 @@ void selectionSort(int arr[], int arrSize) {
 
     for (i = 0; i < arrSize; i++) {
         minIndex = findIndexOfMin(arr, i, arrSize - 1);     // starts at index i, ends at last element
-        swap(arr[i], arr[minIndex])
+        swap(arr[i], arr[minIndex]);
     }
 }
