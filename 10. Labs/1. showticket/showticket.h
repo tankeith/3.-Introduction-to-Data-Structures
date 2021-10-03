@@ -13,11 +13,11 @@ using namespace std;
 class ShowTicket {
     public:
         char row[3];                                // initialize C strings row and seatNum which are char arrays (see showticket.cpp)
-        char seatNum[4];
+        char seat[4];
         bool isSold;
         ShowTicket(const char* x, const char* y) {  // variables passed as pointers
             strcpy(row, x);                         // copies the C string pointed by x into the array pointed by row, including terminating null char
-            strcpy(seatNum, y);                     // to avoid overflows, size of the array pointed by row must be long enough to contain the same C string as x
+            strcpy(seat, y);                        // to avoid overflows, size of the array pointed by row must be long enough to contain the same C string as x
             isSold = false;
         }
         bool is_sold() {
@@ -36,7 +36,7 @@ class ShowTicket {
                 status = "sold";
             else
                 status = "available";                
-            result = result.append(row).append(" ").append(seatNum).append(" ").append(status);
+            result = result.append(row).append(" ").append(seat).append(" ").append(status);
             return result;
         }
 };
