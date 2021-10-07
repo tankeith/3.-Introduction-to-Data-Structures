@@ -21,7 +21,11 @@ lsearch
 bsearch
 selectionsort
 mergesort
+dateclass
 showticket
 showtickets
 sportticket
 ticketsales
+.vscode/tasks.json
+.gitignore
+.vscode/launch.json
